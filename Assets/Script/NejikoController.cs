@@ -74,7 +74,7 @@ public class NejikoController : MonoBehaviour
 
     public void MoveToRight()
     {
-        if (controller.isGrounded && targetLane > MaxLane) targetLane++;
+        if (controller.isGrounded && targetLane < MaxLane) targetLane++;
     }
 
     public void Jump()
